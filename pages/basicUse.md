@@ -1,7 +1,11 @@
+---
+clicks: 4
+---
+
 # 基本用法
 
-<div class="rounded-lg shadow">
-<div class="flex bg-green-200 rounded-t-lg">
+<div v-if="$slidev.nav.clicks > 0" class="rounded-lg shadow">
+<div v-click="1" class="flex bg-green-200 rounded-t-lg">
   <div class="w-64 self-center text-center px-3">
     <div class="font-bold text-xl">
       mock() / @Mock
@@ -21,7 +25,7 @@
   
   </div>
 </div>
-<div class="flex bg-blue-200">
+<div v-click="2" class="flex bg-blue-200">
   <div class="w-64 self-center text-center px-3">
     <div class="font-bold text-xl">
       spy() / @Spy
@@ -34,7 +38,7 @@
   </div>
 </div>
 
-<div class="flex bg-red-200">
+<div v-click="3" class="flex bg-red-200">
   <div class="w-64 self-center text-center px-3">
     <div class="font-bold text-xl">
       @InjectMocks
@@ -42,12 +46,12 @@
   </div>
   <div class="flex-1 bg-red-100 h-full p-3">
 
-  自动注入带有带@Spy 或 @Mock的字段
+  自动注入带有带@Spy 或 @Mock 的字段
   
   </div>
 </div>
 
-<div class="flex bg-yellow-200 rounded-b-lg">
+<div v-click="4" class="flex bg-yellow-200 rounded-b-lg">
   <div class="w-64 self-center text-center px-3 rounded-bl-lg">
     <div class="font-bold text-xl">
       verify

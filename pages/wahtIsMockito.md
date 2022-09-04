@@ -1,8 +1,19 @@
+---
+clicks: 2
+---
+
 # Mockito 是啥?
 
-<div class="bg-green-200 rounded-lg shadow">
+<div v-if="$slidev.nav.clicks === 0" grid="~ cols-7 gap-1 mt-36">
+  <div class="col-span-3 rounded-tl-lg">
+  <img src="/image/mockito-image.png" class="rounded-tl-lg" />
+  </div>
+</div>
+
+
+<div v-if="$slidev.nav.clicks > 0" class="bg-green-200 rounded-lg shadow">
 <div grid="~ cols-7 gap-1 mt-36">
-  <div class="col-span-3">
+  <div class="col-span-3 bg-green-100 rounded-tl-lg">
   <img src="/image/mockito-image.png" class="rounded-tl-lg" />
 
   </div>
@@ -20,14 +31,14 @@
   </div>
 </div>
 
-<div class="text-baisc text-gray-600 bg-green-50 p-6 pb-1 rounded-b-lg">
+<div v-if="$slidev.nav.clicks > 1" class="text-baisc text-gray-600 bg-green-50 p-6 pb-1 rounded-b-lg">
 Mockito 可以在单元测试中模拟一个 Service 返回的数据，而不会真正去调用该 Service，通过模拟一个假的 Service 对象，来快速的测试当前想要测试的类。
 
 目前在 Java 中主流的 Mock 测试工具有 Mockito、JMock、EasyMock等等，而 SpringBoot 目前默认的测试框架是 Mockito 框架。
 </div>
 </div>
 
-<div v-click class="bg-gradient-to-br from-green-100 to-green-400 mt-6 p-6 inline-block font-bold rounded-lg text-gray-600 float-right shadow-lg">
+<div v-click="3" class="bg-gradient-to-br from-green-100 to-green-400 mt-6 p-6 inline-block font-bold rounded-lg text-gray-600 float-right shadow-lg">
 一起来一杯 Mockito?
 </div>
 
