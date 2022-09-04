@@ -1,12 +1,12 @@
 ---
-clicks: 2
+clicks: 3
 ---
 
 # Mockito 是啥?
 
 <div v-if="$slidev.nav.clicks === 0" grid="~ cols-7 gap-1 mt-36">
   <div class="col-span-3 rounded-tl-lg">
-  <img src="/image/mockito-image.png" class="rounded-tl-lg" />
+  <img style="position: absolute; left: 250px; top: 160px;" src="/image/mockito-image.png" class="rounded-tl-lg" />
   </div>
 </div>
 
@@ -14,7 +14,9 @@ clicks: 2
 <div v-if="$slidev.nav.clicks > 0" class="bg-green-200 rounded-lg shadow">
 <div grid="~ cols-7 gap-1 mt-36">
   <div class="col-span-3 bg-green-100 rounded-tl-lg">
-  <img src="/image/mockito-image.png" class="rounded-tl-lg" />
+  <img v-motion
+  :initial="{ x: 200, y: 80 }"
+  :enter="{ x: 0, y: 0, transition: {duration: 600} }" src="/image/mockito-image.png" class="rounded-tl-lg" />
 
   </div>
   <div class="col-span-4 self-center p-1">
