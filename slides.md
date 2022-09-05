@@ -53,6 +53,10 @@ src: ./pages/spyBasicUse.md
 ---
 
 ---
+src: ./pages/mockStatic.md
+---
+
+---
 
 # Components
 
