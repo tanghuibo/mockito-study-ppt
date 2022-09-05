@@ -6,7 +6,7 @@ clicks: 3
 
 <div v-if="$slidev.nav.clicks === 0" grid="~ cols-7 gap-1 mt-36">
   <div class="col-span-3 rounded-tl-lg">
-  <img style="position: absolute; left: 250px; top: 160px;" src="/image/mockito-image.png" class="rounded-tl-lg" />
+  <img style="position: relative; left: 200px; top: 80px;" src="/image/mockito-image.png" class="rounded-tl-lg" />
   </div>
 </div>
 
@@ -33,7 +33,7 @@ clicks: 3
   </div>
 </div>
 
-<div v-if="$slidev.nav.clicks > 1" class="text-baisc text-gray-600 bg-green-50 p-6 pb-1 rounded-b-lg">
+<div v-if="$slidev.nav.clicks > 1" class="text-basic text-gray-600 bg-green-50 p-6 pb-1 rounded-b-lg">
 Mockito 可以在单元测试中模拟一个 Service 返回的数据，而不会真正去调用该 Service，通过模拟一个假的 Service 对象，来快速的测试当前想要测试的类。
 
 目前在 Java 中主流的 Mock 测试工具有 Mockito、JMock、EasyMock等等，而 SpringBoot 目前默认的测试框架是 Mockito 框架。

@@ -48,6 +48,9 @@ class: text-center
 src: ./pages/mockBasicUse.md
 ---
 
+---
+src: ./pages/spyBasicUse.md
+---
 
 ---
 
