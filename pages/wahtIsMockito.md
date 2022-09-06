@@ -5,8 +5,9 @@ clicks: 3
 # Mockito 是啥?
 
 <div v-if="$slidev.nav.clicks === 0" grid="~ cols-7 gap-1 mt-36">
-  <div class="col-span-3 rounded-tl-lg">
-  <img style="position: relative; left: 200px; top: 80px;" src="/image/mockito-image.png" class="rounded-tl-lg" />
+  <div style="position: relative; left: 200px; top: 80px; text-align: center;" class="col-span-3 rounded-tl-lg">
+  <img src="/image/mockito-image.png" class="rounded-tl-lg" />
+        <img class="inline-block" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/mockito/mockito?style=social">
   </div>
 </div>
 

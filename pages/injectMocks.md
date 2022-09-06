@@ -1,7 +1,7 @@
 # @InjectMocks / @Mock / @Spy
 
 
-@InjectMocks 有 Mockito 提供，被测试类需要使用 @InjectMocks，只能对字段进行注入，需要配合 Mockito.openMocks 使用，不依赖 Spring，启动速度很快。
+@InjectMocks 由 Mockito 提供，被测试类需要使用 @InjectMocks，只能对字段进行注入，需要配合 Mockito.openMocks 使用，不依赖 Spring，启动速度很快。
 
 
 
