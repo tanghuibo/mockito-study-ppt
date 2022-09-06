@@ -7,6 +7,7 @@ theme: default
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
+selectable: true
 # show line numbers in code blocks
 lineNumbers: true
 # some information about the slides, markdown enabled
@@ -53,6 +54,15 @@ src: ./pages/spyBasicUse.md
 ---
 
 ---
+layout: center
+class: text-center
+---
+
+# mockito 支持 mock 静态方法 和 final 修饰的方法
+
+需要导入 `mockito-inline` 进行支持
+
+---
 src: ./pages/mockStatic.md
 ---
 
@@ -61,10 +71,38 @@ layout: center
 class: text-center
 ---
 
+# mockito 不支持 mock 被 private 修饰的方法
+
+需要 mock 私有方法可以使用替代品 powerMock
+
+
+---
+layout: center
+class: text-center
+---
+
 # 在 SpringBoot 中使用
+
+真实项目中有很多外部依赖和条件在单元测试中很难满足，spring 官方通过集成 Mockito，提供 @MockBean/@Spy 等注解帮助我们对数据进行 mock
 
 ---
 src: ./pages/springMock.md
+---
+
+---
+layout: center
+class: text-center
+---
+
+# 本地无法启动项目？启动很慢？外部依赖很少？
+
+<div class="mt-6 text-gray-500 text-xl" v-click="1">
+试试 @InjectMocks
+</div>
+
+
+---
+src: ./pages/injectMocks.md
 ---
 
 ---

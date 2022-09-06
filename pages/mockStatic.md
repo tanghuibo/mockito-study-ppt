@@ -1,5 +1,5 @@
 ---
-clicks: 4
+clicks: 2
 ---
 
 # mock 静态方法
@@ -39,7 +39,7 @@ mockMockedStatic.reset();
 <div class="col-span-1">
 
 
-```java {all|all|all|19-20|23-24}
+```java {all|19-20|23-24}
 class MockStaticObj {
     public static Integer getDouble(Integer item) {
         return 2 * item;
@@ -67,26 +67,15 @@ mockMockedStatic.reset();
 ```
 
 </div>
-<div v-click="1" class="col-span-1 shadow px-3 my-1 bg-yellow-50 text-gray-800 pt-6">
+<div v-click="1" class="col-span-1 shadow px-3 my-1 bg-yellow-50 text-gray-800 pt-24">
+
 <div v-click="1">
-
-mockito 支持 mock 静态方法 和 final 修饰的方法，需要导入 `mockito-inline` 进行支持
-
-</div>
-
-<div v-click="2" class="pt-2">
-
-mockito 不支持 mock 被 private 修饰的方法，需要 mock 私有方法可以使用替代品 powerMock
-
-</div>
-
-<div v-click="3" class="pt-2">
 
 mock 静态方法默认使用 Answers.RETURNS_DEFAULTS，**对所有静态方法生效，对非静态方法不生效**
 
 </div>
 
-<div v-click="4" class="pt-2">
+<div v-click="2" class="pt-12">
 
 mock 结束后需要对 mock 进行 reset，否则**影响将会一直持续**
 
