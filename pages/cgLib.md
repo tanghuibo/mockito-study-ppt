@@ -22,7 +22,6 @@ BasicBean aop(BasicBean realBean) {
     ((Factory) proxyBean).setCallbacks(new Callback[] { callback });
     return proxyBean;
 }
-BasicBean realBean = new BasicBean();
-BasicBean proxyBean = aop(realBean);
+BasicBean proxyBean = aop(new BasicBean());
 assertThat(proxyBean.sayHello("thb"), equalTo("hello THB; 欢迎使用 cgLib"));
 ```

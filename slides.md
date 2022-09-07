@@ -119,6 +119,18 @@ src: ./pages/asmUtil.md
 src: ./pages/cgLib.md
 ---
 
+---
+src: ./pages/javassist.md
+---
+
+---
+src: ./pages/javassistBadCase.md
+---
+
+---
+src: ./pages/bytebuddy.md
+---
+
 
 ---
 
