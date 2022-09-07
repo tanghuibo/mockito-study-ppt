@@ -1,8 +1,9 @@
 # byte-buddy
 
+<div class="text-xl">
 byte-buddy 和 ASM、javassist 一样，都能在运行时动态生产 class 文件
-
-<div class="text-sm mb-3">
+</div>
+<div class="text-sm my-3">
 以下演示通过这三款字节码工具对 BasicBean 进行 Aop 增强
 </div>
 
