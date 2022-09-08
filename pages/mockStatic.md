@@ -15,10 +15,10 @@ class MockStaticObj {
 // mock 静态方法
 MockedStatic<MockStaticObj> mockMockedStatic = mockStatic(MockStaticObj.class);
 // 小于 0 时返回 -2 * 入参
-mockMockedStatic.when(() -> MockStaticObj.getDouble(ArgumentMatchers.intThat(i -> i < 0)))
+mockMockedStatic.when(() -> MockStaticObj.getDouble(intThat(i -> i < 0)))
         .thenAnswer(invocationOnMock -> -2 * (Integer) invocationOnMock.getArgument(0));
 // 大于 3 时返回值不能超过 10
-mockMockedStatic.when(() -> MockStaticObj.getDouble(ArgumentMatchers.intThat(i -> i > 3)))
+mockMockedStatic.when(() -> MockStaticObj.getDouble(intThat(i -> i > 3)))
         .thenAnswer(invocationOnMock -> Math.min(10, (Integer) invocationOnMock.callRealMethod()));
 // 2 执行真实调用
 mockMockedStatic.when(() -> MockStaticObj.getDouble(2)).thenAnswer(Answers.CALLS_REAL_METHODS);
@@ -48,10 +48,10 @@ class MockStaticObj {
 // mock 静态方法
 MockedStatic<MockStaticObj> mockMockedStatic = mockStatic(MockStaticObj.class);
 // 小于 0 时返回 -2 * 入参
-mockMockedStatic.when(() -> MockStaticObj.getDouble(ArgumentMatchers.intThat(i -> i < 0)))
+mockMockedStatic.when(() -> MockStaticObj.getDouble(intThat(i -> i < 0)))
         .thenAnswer(invocationOnMock -> -2 * (Integer) invocationOnMock.getArgument(0));
 // 大于 3 时返回值不能超过 10
-mockMockedStatic.when(() -> MockStaticObj.getDouble(ArgumentMatchers.intThat(i -> i > 3)))
+mockMockedStatic.when(() -> MockStaticObj.getDouble(intThat(i -> i > 3)))
         .thenAnswer(invocationOnMock -> Math.min(10, (Integer) invocationOnMock.callRealMethod()));
 // 2 执行真实调用
 mockMockedStatic.when(() -> MockStaticObj.getDouble(2)).thenAnswer(Answers.CALLS_REAL_METHODS);

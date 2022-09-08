@@ -1,6 +1,8 @@
 # byte-buddy
 
+<div class="mb-2">
 接口相对比较干净，写出来的代码比较好维护，比 cgLib 更灵活，但性能调优困难(相对于ASM)
+</div>
 
 ```java
 class MethodInterceptor {

@@ -126,6 +126,10 @@ src: ./pages/cgLib.md
 ---
 
 ---
+src: ./pages/fastClass.md
+---
+
+---
 src: ./pages/javassist.md
 ---
 

@@ -1,6 +1,8 @@
 # cgLib
 
+<div class="mb-2">
 spring aop 的依赖，背后使用 ASM 生成字节码，利用 fastClass 规避放射调用的开销
+</div>
 
 ```java
 BasicBean aop(BasicBean realBean) {

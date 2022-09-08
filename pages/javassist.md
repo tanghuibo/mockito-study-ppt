@@ -1,6 +1,8 @@
 # javassist
 
+<div class="mb-2">
 javassist 中可以使用字符串生成代码，适合运维时，如 arthas
+</div>
 
 ```java
 BasicBean aop(BasicBean realBean) throws Exception {
